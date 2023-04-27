@@ -7,7 +7,7 @@ from nfc.clf import RemoteTarget
 
 DEBUG = True
 
-URL = 'http://attend.rocky-dev.local/api/register/'
+URL = 'https://attend.cantor.local/api/register/'
 
 ROOMID = 9305
 
@@ -19,7 +19,7 @@ def send_data(cardID):
     if DEBUG == True:
         print("request:", requestData)
 
-    postRequest = requests.post(URL, json = requestData)
+    postRequest = requests.post(URL, json = requestData, verify=False)
 
     if postRequest.status_code == 201:
         if DEBUG == True:
