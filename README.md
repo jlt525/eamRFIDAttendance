@@ -9,3 +9,6 @@ This directory contains the python program for scanning RFID cards
 
 ## nginx
 This directory contains the nginx configuration files. These are placed in /etc/nginx on the host
+
+## ssl_cert_creation.sh
+These are the commands used for creating ssl certificates
