@@ -19,7 +19,7 @@ def send_data(cardID):
     if DEBUG == True:
         print("request:", requestData)
 
-    postRequest = requests.post(URL, json = requestData, verify=False)
+    postRequest = requests.post(URL, json = requestData, verify = False)
 
     if postRequest.status_code == 201:
         if DEBUG == True:
